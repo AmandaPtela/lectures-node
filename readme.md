@@ -8,7 +8,8 @@
 
 
 
-// Passa o caminho e ele aponta o nome do diretório
+// Passa o caminho e ele aponta o nome do diretório:
+--
 console.log(path.dirname('usr/share/gnome'));
 
 // Passa conjunto de nomes e junta pra gerar um caminho
