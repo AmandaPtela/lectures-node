@@ -12,9 +12,11 @@
   
 
 ###  Passa o caminho e ele aponta o nome do diretório:
-    const path = require('path');
-    path.dirname('usr/share/gnome');
-    // 'usr/share/'
+```  const path = require('path');
+
+ path.dirname('usr/share/gnome');
+  // 'usr/share/' 
+```
 
 ### Passa conjunto de nomes e junta pra gerar um caminho:
     const path = require('path');
@@ -23,5 +25,6 @@
 ### Passa conjunto de nomes e junta pra gerar um caminho a artir da raíz (/): 
     const path = require('path');
     path.resolve( '/', 'usr', 'share', 'gnome');
-
-### ```Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar ```
+ 
+` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar
+`
