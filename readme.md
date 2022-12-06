@@ -1,7 +1,8 @@
-* Para importar módulos
+* Para importar módulos: 
     Require()
-  Para exportar módulos
-    module.exports
+
+* Para exportar módulos
+    ** module.exports
 
 const path = require('path');
 
