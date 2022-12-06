@@ -1,15 +1,18 @@
 # NodeJS
  Criado para consultas durante estudos.
 ### Para importar módulos: 
-`require(nome-do-modulo)`
-
-    const path = require('path');
+```javascript 
+require(nome-modulo)
+const path = require('path');
+```
 
 ### Para exportar módulos:
-`module.exports = o-que-sera-exportado`
+```javascript
+module.exports = o-que-sera-exportado`
+module.exports = path;
+```
 
-    module.exports = path;
-### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
+##### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
 
 
 ###  Passa o caminho e ele aponta o nome do diretório:
