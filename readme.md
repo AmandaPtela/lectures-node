@@ -1,17 +1,15 @@
 # NodeJS
  Criado para consultas durante estudos.
 ### Para importar módulos: 
-> Require(nome-do-modulo)
+Require(nome-do-modulo)
 
     const path = require('path');
 
 ### Para exportar módulos:
-> module.exports = o-que-sera-exportado
+module.exports = o-que-sera-exportado
 
     module.exports = path;
   
-
-
 
 ###  Passa o caminho e ele aponta o nome do diretório:
     path.dirname('usr/share/gnome');
