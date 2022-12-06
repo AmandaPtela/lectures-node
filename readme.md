@@ -13,10 +13,10 @@
 
 
 ###  Passa o caminho e ele aponta o nome do diretório:
-    const path = require('path');
-    path.dirname('usr/share/gnome');
-    // 'usr/share/'
-
+  ``` const path = require('path');
+  path.dirname('usr/share/gnome');
+  _// 'usr/share/'_ 
+```
 ### Passa conjunto de nomes e junta pra gerar um caminho:
     const path = require('path');
     path.resolve( 'usr', 'share', 'gnome');
