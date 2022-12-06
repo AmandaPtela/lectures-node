@@ -16,6 +16,7 @@
 ``` 
 const path = require('path');
 path.dirname('usr/share/gnome');
+
 (retorno) => 'usr/share/'
 ```
 ### Passa conjunto de nomes e junta pra gerar um caminho:
