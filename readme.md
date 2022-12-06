@@ -20,4 +20,4 @@
 ### Passa conjunto de nomes e junta pra gerar um caminho a artir da raíz (/): 
     path.resolve( '/', 'usr', 'share', 'gnome');
 
-> Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar 
+## Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar 
