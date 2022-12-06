@@ -14,11 +14,11 @@ module.exports = o-que-sera-exportado
 ###  Passa o caminho e ele aponta o nome do diretório:
     const path = require('path');
     path.dirname('usr/share/gnome');
-    <!-- // 'usr/share/' -->
+    // 'usr/share/'
 
 ### Passa conjunto de nomes e junta pra gerar um caminho:
-    const path = require('path');
-    path.resolve( 'usr', 'share', 'gnome');
+    ``` const path = require('path');
+    path.resolve( 'usr', 'share', 'gnome'); ```
 
 ### Passa conjunto de nomes e junta pra gerar um caminho a artir da raíz (/): 
     const path = require('path');
