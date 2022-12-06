@@ -1,12 +1,12 @@
 * Para importar módulos: 
     Require()
+    * const path = require('path');
 
-* Para exportar módulos
-    ** module.exports
+* Para exportar módulos:
+    module.exports = o-que-sera-exportado
+    * module.exports = path;
 
-const path = require('path');
 
-module.exports = path;
 
 // Passa o caminho e ele aponta o nome do diretório
 console.log(path.dirname('usr/share/gnome'));
