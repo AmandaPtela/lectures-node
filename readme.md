@@ -1,5 +1,5 @@
 # NodeJS
-
+> Criado para consultas durante estudos. Livre para uso. 
 ### Para importar módulos: 
 > Require(nome-do-modulo)
 
