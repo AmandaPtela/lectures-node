@@ -14,6 +14,7 @@ module.exports = o-que-sera-exportado
 ###  Passa o caminho e ele aponta o nome do diretório:
     const path = require('path');
     path.dirname('usr/share/gnome');
+    <!-- // 'usr/share/' -->
 
 ### Passa conjunto de nomes e junta pra gerar um caminho:
     const path = require('path');
