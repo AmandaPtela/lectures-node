@@ -13,7 +13,8 @@
 
 
 ###  Passa o caminho e ele aponta o nome do diretório:
-  ``` const path = require('path');
+  ``` 
+  const path = require('path');
   path.dirname('usr/share/gnome');
   _// 'usr/share/'_ 
 ```
