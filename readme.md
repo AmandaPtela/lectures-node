@@ -1,12 +1,12 @@
 # NodeJS
  Criado para consultas durante estudos.
 ### Para importar módulos: 
-Require(nome-do-modulo)
+`require(nome-do-modulo)`
 
     const path = require('path');
 
 ### Para exportar módulos:
-module.exports = o-que-sera-exportado
+`module.exports = o-que-sera-exportado`
 
     module.exports = path;
   
@@ -17,11 +17,11 @@ module.exports = o-que-sera-exportado
     // 'usr/share/'
 
 ### Passa conjunto de nomes e junta pra gerar um caminho:
-    ``` const path = require('path');
-    path.resolve( 'usr', 'share', 'gnome'); ```
+    const path = require('path');
+    path.resolve( 'usr', 'share', 'gnome');
 
 ### Passa conjunto de nomes e junta pra gerar um caminho a artir da raíz (/): 
     const path = require('path');
     path.resolve( '/', 'usr', 'share', 'gnome');
 
-## Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar 
+### ```Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar ```
