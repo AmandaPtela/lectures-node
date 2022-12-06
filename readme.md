@@ -1,5 +1,5 @@
 # NodeJS
->> Criado para consultas durante estudos.
+> Criado para consultas durante estudos.
 ### Para importar módulos: 
 > Require(nome-do-modulo)
 
