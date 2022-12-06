@@ -35,5 +35,5 @@ path.resolve( 'usr', 'share', 'gnome');
 const path = require('path');
 path.resolve( '/', 'usr', 'share', 'gnome');
 
-(retorno) => /usr/share/gnome
+(retorno) => '/usr/share/gnome'
 ```
