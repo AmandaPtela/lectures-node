@@ -38,6 +38,22 @@
       > SO - Provê ferramentas e funcionalidades relacionadas ao Sistema Operacional <
       const pacote = require('os');
     ```
+  * Módulos de Terceiros:
+
+    `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
+    * É necessário instalá-los para poder usar:
+    ```
+    npm install nome do módulo
+    ```
+    só então podemos importar:
+    ```javascript
+    require('nome-módulo-instalado');
+
+    exemplo:
+    // no terminal
+      npm install pacoteShrek
+    //após instalação
+      const pacote = require('pacoteShrek');
 
 ### Para exportar módulos:
 ```javascript
