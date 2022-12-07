@@ -2,20 +2,42 @@
  Criado para consultas durante estudos.
 
 ### Para importar módulos: 
-* Módulos locais: 
-  ```javascript
-  require('caminho-modulo')
+  * Módulos locais:
 
-  exemplo: 
-    > arquivo na mesma pasta
-    const arquivo = require('./arquivo');
+    `módulos próprios criados localmente pelo programador`
+    ```javascript
+      require('caminho-modulo')
 
-    > arquivo na pasta anterior
-    const arquivo = require('../arquivo');
-  ```
-* OBS: Não é necessário especificar a extensão do arquivo pois o node automaticamento busca por arquivos **.js** ou **.json**
+      exemplo: 
+        > arquivo na mesma pasta
+        const arquivo = require('./arquivo');
 
-#### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
+        > arquivo na pasta anterior
+        const arquivo = require('../arquivo');
+    ```
+    #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node automaticamento busca por arquivos **.js** ou **.json**
+    #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
+
+  * Módulos Internos:
+
+    `módulos instalados junto com Node.js`
+      ```javascript
+    require('nome-pacote-a-usar');
+
+    exemplo:
+
+      > FS - Fornece API para interagir com o sistema de arquivos <
+      const pacote = require('fs');
+
+      > URL - Provê utilitários para ler e manipular URLs <
+      const pacote = require('url');
+
+      > UTIL - Provê ferramentas e funcionalidades úteis a programadores. < 
+      const pacote = require('util');
+
+      > SO - Provê ferramentas e funcionalidades relacionadas ao Sistema Operacional <
+      const pacote = require('os');
+    ```
 
 ### Para exportar módulos:
 ```javascript
