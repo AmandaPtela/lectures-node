@@ -2,17 +2,18 @@
  Criado para consultas durante estudos.
 
 ### Para importar módulos: 
-```javascript 
-require('caminho-modulo')
+* Módulos locais: 
+  ```javascript
+  require('caminho-modulo')
 
-exemplo: 
-  > arquivo na mesma pasta
-  const arquivo = require('./arquivo');
+  exemplo: 
+    > arquivo na mesma pasta
+    const arquivo = require('./arquivo');
 
-  > arquivo na pasta anterior
-  const arquivo = require('../arquivo');
-```
-* OBS: Não é necessário especificar a extensão do arquivo
+    > arquivo na pasta anterior
+    const arquivo = require('../arquivo');
+  ```
+* OBS: Não é necessário especificar a extensão do arquivo pois o node automaticamento busca por arquivos **.js** ou **.json**
 
 #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
 
@@ -26,7 +27,7 @@ exemplo:
   module.exports = path;
 ```
 
-Exemplo de módulo a ser exportado:
+Exemplo de módulo sendo **exportado**:
 ```javascript
 // nome arquivo: somar.js
   const soma = function(a,b) {
@@ -37,16 +38,40 @@ Exemplo de módulo a ser exportado:
   module.exports = soma;
 ```
 
-Exemplo de módulo sendo importado:
+Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
 ```javascript
-// importa *arquivo* que possui a função de soma
+// nome arquivo: index.js
+  const soma = function(a,b) {
+    return(a + b)
+  }
+
+  const subtracao = function(a,b) {
+    return(a - b)
+  }
+
+// soma e subtração são os módulos que serão exportados e usados onde forem importados
+  module.exports = { soma, subtracao };
+```
+
+Exemplo de módulo sendo **importado**:
+```javascript
+// importa arquivo(somar.js) que possui a função de soma
 const funcaoSoma = require('./somar');
 
 console.log(funcaoSoma(1,2));
 (retorno) => 3
 ```
 
-###  Passa o caminho e ele aponta o nome do diretório do módulo:
+Exemplo de **mais de um** módulo sendo **importado** de um mesmo arquivo:
+```javascript
+// importa arquivo(index.js) que possui as funções de soma e subtração
+const funcoes = require('./index');
+
+console.log(funcoes.funcaoSoma(1,2));
+(retorno) => 3
+```
+
+<!-- ###  Determina o caminho do diretório do módulo:
 ```javascript
 const path = require('./path');
 
@@ -68,4 +93,4 @@ const path = require('./path');
 path.resolve( '/', 'usr', 'share', 'gnome');
 
 (retorno) => '/usr/share/gnome'
-```
+``` -->
