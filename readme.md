@@ -55,6 +55,9 @@
       npm install pacoteShrek
     //após instalação
       const pacote = require('pacoteShrek');
+    ```
+
+    #### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
 
 ### Para exportar módulos:
 ```javascript
