@@ -1,5 +1,18 @@
 # NodeJS
- Criado para consultas durante estudos.
+ Repositório criado para consultas durante estudos.
+
+### Conceitos:
+* `Node.js` é um ambiente/plataforma de execução para criar aplicações WEB escaláveis utilizando Javascript sem depender de um navegador.
+
+* `NPM` (**N**ode **P**ackege **M**anager) é o gerenciador de pacotes do Node.
+```javascript
+  [Repositório Node](https://nodejs.com) é o repositório oficial de pacotes Node.
+```
+
+* `Módulos` são pedaços de código. Uma coleção de funções e objetos do JavaScript que podem ser usados por outras aplicações ou por outras partes do código da própria aplicação.
+
+* `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
+
 
 ### Para importar módulos: 
   * Módulos locais:
@@ -61,7 +74,7 @@
 
 ### Para exportar módulos:
 ```javascript
-module.exports = nome-módulo-exportado;
+  module.exports = nome-módulo-exportado;
 
 exemplo:
   // nome arquivo: path.js
