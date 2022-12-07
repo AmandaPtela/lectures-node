@@ -24,7 +24,7 @@
 
 * `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
 
-### Exportação:
+## Exportação:
 ```javascript
   module.exports = nome-módulo-exportado;
 
@@ -60,8 +60,8 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
   module.exports = { soma, subtracao };
 ```
 
-### Importação: 
-  ## Módulos Locais:
+## Importação: 
+  ### Módulos Locais:
     
   `módulos próprios criados localmente pelo programador`
     
@@ -75,10 +75,10 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
       > arquivo na pasta anterior
       const arquivo = require('../arquivo');
   ```
-  #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
-  #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
+  ##### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
+  ##### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
 
-  ## Módulos Internos:
+  ### Módulos Internos:
 
   `módulos instalados junto com a instalação do Node.js. São nativos.`
   ```javascript
@@ -98,7 +98,7 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
     const pacote = require('os');
   ```
 
-  ## Módulos de Terceiros:
+  ### Módulos de Terceiros:
 
   `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
   * É necessário instalá-los para poder usar:
@@ -116,7 +116,7 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
     const pacote = require('pacoteShrek');
   ```
 
-  #### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
+  ##### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
 
 
 Exemplo de módulo sendo **importado**:
