@@ -1,6 +1,14 @@
 # NodeJS
  Repositório criado para consultas durante estudos.
 
+ Tabela de conteúdos
+=================
+<!--ts-->
+   * [Conceitos](#Conceitos)
+   * [Importação de Módulos](#Importação)
+   * [Exportação de Módulos](#Exportação)
+<!--te-->
+
 ### Conceitos:
 * `Node.js` é um ambiente/plataforma de execução para criar aplicações WEB escaláveis utilizando Javascript sem depender de um navegador.
 
@@ -14,7 +22,7 @@
 * `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
 
 
-### Para importar módulos: 
+### Importação: 
   * Módulos locais:
 
     `módulos próprios criados localmente pelo programador`
@@ -72,7 +80,7 @@
 
     #### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
 
-### Para exportar módulos:
+### Exportação:
 ```javascript
   module.exports = nome-módulo-exportado;
 
