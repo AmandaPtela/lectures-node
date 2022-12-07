@@ -78,6 +78,24 @@ exemplo:
   ##### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
   ##### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
 
+  :purple_circle: Exemplo de módulo sendo **importado**:
+  ```javascript
+  // importa arquivo(somar.js) que possui a função de soma
+  const funcaoSoma = require('./somar');
+  
+  console.log(funcaoSoma(1,2));
+  (retorno) => 3
+  ```
+  
+  :purple_circle: Exemplo de **mais de um** módulo sendo **importado** de um mesmo arquivo:
+  ```javascript
+  // importa arquivo(index.js) que possui as funções de soma e subtração
+  const funcoes = require('./index');
+  
+  console.log(funcoes.funcaoSoma(1,2));
+  (retorno) => 3
+  ```
+
   ### Módulos Internos:
 
   `módulos instalados junto com a instalação do Node.js. São nativos.`
@@ -117,24 +135,6 @@ exemplo:
   //após instalação
     const pacote = require('pacoteShrek');
   ```
-
-:purple_circle: Exemplo de módulo sendo **importado**:
-```javascript
-// importa arquivo(somar.js) que possui a função de soma
-const funcaoSoma = require('./somar');
-
-console.log(funcaoSoma(1,2));
-(retorno) => 3
-```
-
-:purple_circle: Exemplo de **mais de um** módulo sendo **importado** de um mesmo arquivo:
-```javascript
-// importa arquivo(index.js) que possui as funções de soma e subtração
-const funcoes = require('./index');
-
-console.log(funcoes.funcaoSoma(1,2));
-(retorno) => 3
-```
 
 <!-- ###  Determina o caminho do diretório do módulo:
 ```javascript
