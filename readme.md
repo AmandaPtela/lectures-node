@@ -5,8 +5,11 @@
 =================
 <!--ts-->
    * [Conceitos](#Conceitos)
-   * [Importação de Módulos](#Importação)
    * [Exportação de Módulos](#Exportação)
+   * [Importação de Módulos](#Importação)
+      * [Módulos Locais](#Módulos-Locais)
+      * [Módulos Internos](#Módulos-Internos)
+      * [Módulos de Terceiros](#Módulos-de-Terceiros)
 <!--te-->
 
 ### Conceitos:
@@ -20,65 +23,6 @@
 * `Módulos` são pedaços de código. Uma coleção de funções e objetos do JavaScript que podem ser usados por outras aplicações ou por outras partes do código da própria aplicação.
 
 * `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
-
-
-### Importação: 
-  * Módulos locais:
-
-    `módulos próprios criados localmente pelo programador`
-    ```javascript
-      require('caminho-modulo')
-
-      exemplo: 
-        > arquivo na mesma pasta
-        const arquivo = require('./arquivo');
-
-        > arquivo na pasta anterior
-        const arquivo = require('../arquivo');
-    ```
-    #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
-    #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
-
-  * Módulos Internos:
-
-    `módulos instalados junto com a instalação do Node.js. São nativos.`
-      ```javascript
-    require('nome-pacote-a-usar');
-
-    exemplo:
-
-      > FS - Fornece API para interagir com o sistema de arquivos <
-      const pacote = require('fs');
-
-      > URL - Provê utilitários para ler e manipular URLs <
-      const pacote = require('url');
-
-      > UTIL - Provê ferramentas e funcionalidades úteis a programadores. < 
-      const pacote = require('util');
-
-      > SO - Provê ferramentas e funcionalidades relacionadas ao Sistema Operacional <
-      const pacote = require('os');
-    ```
-  
-  * Módulos de Terceiros:
-
-    `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
-    * É necessário instalá-los para poder usar:
-    ```
-    npm install nome do módulo
-    ```
-    só então podemos importar:
-    ```javascript
-    require('nome-módulo-instalado');
-
-    exemplo:
-    // no terminal
-      npm install pacoteShrek
-    //após instalação
-      const pacote = require('pacoteShrek');
-    ```
-
-    #### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
 
 ### Exportação:
 ```javascript
@@ -115,6 +59,65 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
 // soma e subtração são os módulos que serão exportados e usados onde forem importados
   module.exports = { soma, subtracao };
 ```
+
+### Importação: 
+  ## Módulos Locais:
+    
+  `módulos próprios criados localmente pelo programador`
+    
+  ```javascript
+    require('caminho-modulo')
+
+    exemplo: 
+      > arquivo na mesma pasta
+      const arquivo = require('./arquivo');
+
+      > arquivo na pasta anterior
+      const arquivo = require('../arquivo');
+  ```
+  #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
+  #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
+
+  ## Módulos Internos:
+
+  `módulos instalados junto com a instalação do Node.js. São nativos.`
+  ```javascript
+  require('nome-pacote-a-usar');
+
+  exemplo:
+    > FS - Fornece API para interagir com o sistema de arquivos <
+    const pacote = require('fs');
+
+    > URL - Provê utilitários para ler e manipular URLs <
+    const pacote = require('url');
+
+    > UTIL - Provê ferramentas e funcionalidades úteis a programadores. < 
+    const pacote = require('util');
+
+    > SO - Provê ferramentas e funcionalidades relacionadas ao Sistema Operacional <
+    const pacote = require('os');
+  ```
+
+  ## Módulos de Terceiros:
+
+  `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
+  * É necessário instalá-los para poder usar:
+  ```
+  npm install nome do módulo
+  ```
+  só então podemos importar:
+  ```javascript
+  require('nome-módulo-instalado');
+
+  exemplo:
+  // no terminal
+    npm install pacoteShrek
+  //após instalação
+    const pacote = require('pacoteShrek');
+  ```
+
+  #### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
+
 
 Exemplo de módulo sendo **importado**:
 ```javascript
