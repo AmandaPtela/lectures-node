@@ -15,7 +15,7 @@
         > arquivo na pasta anterior
         const arquivo = require('../arquivo');
     ```
-    #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node automaticamento busca por arquivos **.js** ou **.json**
+    #### OBS: `Não` é necessário especificar a extensão do arquivo pois o node, automaticamente, busca por arquivos **.js** ou **.json**
     #### ` Tudo que é criado nesse arquivo pertence só a este arquivo, por isso precisamos exportar`
 
   * Módulos Internos:
