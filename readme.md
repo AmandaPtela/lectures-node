@@ -42,13 +42,13 @@ module.exports = soma;
 Exemplo de módulo sendo importado:
 ```java
 // importa *arquivo* que possui a função de soma
-const soma = require(./somar);
+const soma = require('./somar');
 
 console.log(soma(1,2));
 (retorno) => 3
 ```
 
-###  Passa o caminho e ele aponta o nome do diretório:
+###  Passa o caminho e ele aponta o nome do diretório do módulo:
 ```javascript
 const path = require('path');
 
@@ -56,7 +56,7 @@ path.dirname('usr/share/gnome');
 
 (retorno) => 'usr/share/'
 ```
-### Passa conjunto de nomes e junta pra gerar um caminho:
+### Passa conjunto de nomes pra gerar um caminho para o módulo:
 ```javascript
 const path = require('path');
 path.resolve( 'usr', 'share', 'gnome');
