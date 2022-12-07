@@ -6,7 +6,7 @@
 
 * `NPM` (**N**ode **P**ackege **M**anager) é o gerenciador de pacotes do Node.
 ```javascript
-  `www.npmjs.com` é o repositório oficial de pacotes Node.
+  `https://www.npmjs.com` é o repositório oficial de pacotes Node.
 ```
 
 * `Módulos` são pedaços de código. Uma coleção de funções e objetos do JavaScript que podem ser usados por outras aplicações ou por outras partes do código da própria aplicação.
