@@ -20,7 +20,7 @@
 
   * Módulos Internos:
 
-    `módulos instalados junto com Node.js`
+    `módulos instalados junto com a instalação do Node.js. São nativos.`
       ```javascript
     require('nome-pacote-a-usar');
 
@@ -38,6 +38,7 @@
       > SO - Provê ferramentas e funcionalidades relacionadas ao Sistema Operacional <
       const pacote = require('os');
     ```
+  
   * Módulos de Terceiros:
 
     `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
