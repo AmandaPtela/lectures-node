@@ -24,7 +24,7 @@
 
 * `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
 
-## Exportação:
+## Exportação
 ```javascript
   module.exports = nome-módulo-exportado;
 
@@ -60,7 +60,7 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
   module.exports = { soma, subtracao };
 ```
 
-## Importação: 
+## Importação
   ### Módulos Locais:
     
   `módulos próprios criados localmente pelo programador`
