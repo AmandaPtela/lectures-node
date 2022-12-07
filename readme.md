@@ -34,7 +34,7 @@ exemplo:
   module.exports = path;
 ```
 
-Exemplo de módulo sendo **exportado**:
+:purple_circle: Exemplo de módulo sendo **exportado**:
 ```javascript
 // nome arquivo: somar.js
   const soma = function(a,b) {
@@ -45,7 +45,7 @@ Exemplo de módulo sendo **exportado**:
   module.exports = soma;
 ```
 
-Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
+:purple_circle: Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
 ```javascript
 // nome arquivo: index.js
   const soma = function(a,b) {
@@ -105,6 +105,8 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
   ```
   npm install nome do módulo
   ```
+##### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
+
   só então podemos importar:
   ```javascript
   require('nome-módulo-instalado');
@@ -116,10 +118,7 @@ Exemplo de **mais de um** módulo sendo **exportado** de um mesmo arquivo:
     const pacote = require('pacoteShrek');
   ```
 
-  ##### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
-
-
-Exemplo de módulo sendo **importado**:
+:purple_circle: Exemplo de módulo sendo **importado**:
 ```javascript
 // importa arquivo(somar.js) que possui a função de soma
 const funcaoSoma = require('./somar');
@@ -128,7 +127,7 @@ console.log(funcaoSoma(1,2));
 (retorno) => 3
 ```
 
-Exemplo de **mais de um** módulo sendo **importado** de um mesmo arquivo:
+:purple_circle: Exemplo de **mais de um** módulo sendo **importado** de um mesmo arquivo:
 ```javascript
 // importa arquivo(index.js) que possui as funções de soma e subtração
 const funcoes = require('./index');
