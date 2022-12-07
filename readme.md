@@ -27,7 +27,7 @@ exemplo:
 ```
 
 Exemplo de módulo a ser exportado:
-```java
+```javascript
 // nome arquivo: somar.js
   const soma = function(a,b) {
     return(a + b)
@@ -38,7 +38,7 @@ Exemplo de módulo a ser exportado:
 ```
 
 Exemplo de módulo sendo importado:
-```java
+```javascript
 // importa *arquivo* que possui a função de soma
 const funcaoSoma = require('./somar');
 
