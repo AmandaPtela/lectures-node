@@ -28,6 +28,25 @@ exemplo:
   module.exports = path;
 ```
 
+Exemplo de módulo a ser exportado:
+```java
+> nome arquivo: somar.js
+const soma = function(a,b) {
+  return(a + b)
+}
+
+// soma é o módulo a ser exportado e o que será usado onde for importado
+module.exports = soma;
+```
+
+Exemplo de módulo sendo importado:
+```java
+// importa *arquivo* que possui a função de soma
+const soma = require(./somar);
+
+console.log(soma(1,2));
+(retorno) => 3
+```
 
 ###  Passa o caminho e ele aponta o nome do diretório:
 ```javascript
