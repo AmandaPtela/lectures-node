@@ -252,13 +252,16 @@ npm run test
 
 // no Arquivo principal:
   const módulo = require('readline-sync');
-  const nome = módulo.question('Qual seu nome'); 
-  console.log(nome);
+  const nome = módulo.question('Qual seu nome');
+  const nome = módulo.questionInt('Qual sua idade?'); 
+  console.log(nome, ',', idade);
 
   //Retorno no console:
-    Qual seu nome?
-  //aguarda usuário digitar e retorna o valor digitado
-    Nome digitado pelo usuário //console.log(nome);
+    'Qual seu nome?'
+  //aguarda usuário digitar
+    'Qual sua idade?'
+  //aguarda usuário digitar e retorna os valores digitados
+    'Nome digitado pelo usuário,', idade //  console.log(nome, ',', idade);
 ```
 
 
