@@ -257,7 +257,7 @@ npm run test
 
   //Retorno no console:
     Qual seu nome?
-  //aguarda usuário digitar
+  //aguarda usuário digitar e retorna o valor digitado
     Nome digitado pelo usuário //console.log(nome);
 ```
 
