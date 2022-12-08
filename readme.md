@@ -211,7 +211,7 @@ npm run test
 // Executa testes definidos em arquivos de teste
 ```
 
-`npm start` -> É o script principal da aplicação determinado na chave __`scripts`__ do __package.json__ :
+`npm start` -> É o script principal da aplicação, determinado na chave __`scripts`__ do __package.json__ :
 ```javascript
  npm start
 // executa o mesmo que o comando determinado no valor da chave "start" nos scripts.
