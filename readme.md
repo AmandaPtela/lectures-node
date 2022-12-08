@@ -10,9 +10,12 @@
       * [Módulos Locais](#Módulos-Locais)
       * [Módulos Internos](#Módulos-Internos)
       * [Módulos de Terceiros](#Módulos-de-Terceiros)
+  * [NPM](#npm)
+      * [Comandos NPM](#comandos-npm)
+
 <!--te-->
 
-### Conceitos:
+### **Conceitos**:
 * `Node.js` é um ambiente/plataforma de execução para criar aplicações WEB escaláveis utilizando Javascript sem depender de um navegador.
 
 * `NPM` (**N**ode **P**ackege **M**anager) é o gerenciador de pacotes do Node.
@@ -24,7 +27,7 @@
 
 * `Pacote` é um conjunto de arquivos que exportam um ou mais módulos Node.
 
-## Exportação
+## **Exportação**
 ```javascript
   module.exports = nome-módulo-exportado;
 
@@ -60,7 +63,7 @@ exemplo:
   module.exports = { soma, subtracao };
 ```
 
-## Importação
+## **Importação**
   ### Módulos Locais:
     
   `módulos próprios criados localmente pelo programador`
@@ -160,9 +163,11 @@ path.resolve( '/', 'usr', 'share', 'gnome');
 (retorno) => '/usr/share/gnome'
 ``` -->
 
-## NPM
+## **NPM**
 * **N**ode **P**ackage **M**anager - É o gerenciador de pacotes do Node. Usado para vários comandos como _npm install_, _npm start_, e outros.
 É com ele que baixamos pacotes/módulos de terceiros, feitos por outras pessoas
+
+### **Comandos NPM**
 
 `npm init` -> Inicia a criação de um pacote node na pasta da aplicação.
 Ao rodar esse comando, surgirá algumas perguntas como 'Qual o nome do pacote', 'Qual a versão do pacote', e outras.
