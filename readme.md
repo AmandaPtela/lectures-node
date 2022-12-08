@@ -242,4 +242,23 @@ npm run test
 }
 ```
 
+:purple_circle: Exemplo usando módulo instalado **_readline-sync_**:
+```javascript
+
+//No terminal
+  `npm install readline-sync`
+
+//Após instalação
+
+// no Arquivo principal:
+  const módulo = require('readline-sync');
+  const nome = módulo.question('Qual seu nome'); 
+  console.log(nome);
+
+  //Retorno no console:
+    Qual seu nome?
+  //aguarda usuário digitar
+    Nome digitado pelo usuário //console.log(nome);
+```
+
 
