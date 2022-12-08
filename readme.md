@@ -159,3 +159,73 @@ path.resolve( '/', 'usr', 'share', 'gnome');
 
 (retorno) => '/usr/share/gnome'
 ``` -->
+
+## NPM
+* **N**ode **P**ackage **M**anager - É o gerenciador de pacotes do Node. Usado para vários comandos como _npm install_, _npm start_, e outros.
+É com ele que baixamos pacotes/módulos de terceiros, feitos por outras pessoas
+
+`npm init` -> Inicia a criação de um pacote node na pasta da aplicação.
+Ao rodar esse comando, surgirá algumas perguntas como 'Qual o nome do pacote', 'Qual a versão do pacote', e outras.
+```
+npm init
+```
+
+Para 'pular' essa etapa, existe a _flag_ **-y**, que faz com que todas as perguntas sejam respondidas com as respostas padrão do comando.
+```
+npm init -y
+```
+
+`npm install` 
+-> Traz para a máquina os módulos internos do node (_`node modules`_) e os módulos descritos no _`package.json`_
+
+```
+npm install
+```
+
+`npm install nome-do-pacote`
+-> Traz para máquina o pacote desejado
+
+Ao fim da instalação do primeiro módulo vindo de fora, é criada na pasta _`package.json`_ da aplicação, uma `chave` de nome _`dependencies`_ que irá guardar o nome de todos os módulos instalados e, cada módulo instalado, terá seu conteúdo guardado dentro da pasta `_node modules_`.
+
+```
+npm install nome-do-pacote
+```
+
+`npm run` -> Executa uma tarefa determinada na chave __`scripts`__ do __package.json__:
+```javascript
+npm run test
+// Executa testes definidos em arquivos de teste
+```
+
+`npm start` -> É um atalho determinado na chave __`scripts`__ do __package.json__: para usar outro comando:
+```javascript
+ npm start
+// executa o mesmo que o comando determinado no valor da chave "start" nos scripts.
+```
+
+:purple_circle: Exemplo de um __package.json__:
+```javascript
+  {
+  "name": "lectures-node",
+  "version": "1.0.0",
+  "description": "repositório para estudos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+  // npm start = node index.js ao executar no terminal
+    "test": "testeApp.test.js"
+  // Executa testes definidos em arquivos de teste
+  },
+  "keywords": [
+    "lectures"
+  ],
+  "author": "amanda",
+  "license": "ISC",
+  "dependencies": {
+    //módulo de terceiros instalados aparecem aqui
+    "readline-sync": "^1.4.10"
+  }
+}
+```
+
+
