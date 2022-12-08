@@ -3,7 +3,7 @@
 
  Repositório criado para consultas durante estudos.
 
- Tabela de conteúdos
+ Índice
 =================
 <!--ts-->
    * [Conceitos](#Conceitos)
@@ -126,7 +126,7 @@ exemplo:
   `módulos feitos por outras pessoas e disponibilizados para uso pelo *NPM*`
   * É necessário instalá-los para poder usar:
   ```
-  npm install nome do módulo
+  npm install nome-do-módulo
   ```
 ##### OBS: O módulo deve estar na pasta `node_modules` que, por sua vez, deve estar dentro da pasta da aplicação.
 
@@ -136,9 +136,16 @@ exemplo:
 
   exemplo:
   // no terminal
-    npm install pacoteShrek
+    npm install calculadora
+
   //após instalação
-    const pacote = require('pacoteShrek');
+    const pacote = require('calculadora');
+
+    //usando:
+    //variável.função()
+    ex: pacote.soma()
+        pacote.subtração()
+        pacote.divisão()
   ```
 
 <!-- ###  Determina o caminho do diretório do módulo:
